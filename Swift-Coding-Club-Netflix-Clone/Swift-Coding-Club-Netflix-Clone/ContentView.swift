@@ -29,6 +29,7 @@ struct ContentView: View {
                                 Text("괴물: 제프리 다머 이야기")
                                 Text("불길한, 심리, 공포, 한 시대를 담은 범죄극")
                             }
+                            .foregroundColor(.white)
                             
                             HStack {
                                 Spacer()
@@ -66,9 +67,82 @@ struct ContentView: View {
                                 
                                 Spacer()
                             }
-                            
                         }
                         
+                        VStack {
+                            HStack {
+                                Image(systemName: "n.square")
+                                
+                                Spacer()
+                                
+                                Button {
+                                    print("airplay")
+                                } label: {
+                                    Image(systemName: "airplayvideo")
+                                        .foregroundColor(.white)
+                                }
+
+                                Button {
+                                    print("search")
+                                } label: {
+                                    Image(systemName: "magnifyingglass")
+                                        .foregroundColor(.white)
+                                }
+                                
+                                Button {
+                                    print("search")
+                                } label: {
+                                    Image(systemName: "person.circle")
+                                }
+                                
+                            }
+                            Spacer()
+                        }
+                        
+                    }
+                    
+                    LazyVStack(alignment: .leading) {
+                        Text("시리즈")
+                            .foregroundColor(.white)
+                            .padding(.leading, 8)
+                        ScrollView(.horizontal) {
+                            LazyHStack {
+                                ForEach(0..<10) { _ in
+                                    Image("es")
+                                        .resizable()
+                                        .frame(width: 100, height: 180)
+                                }
+                                
+                            }
+                        }
+                        
+                        Text("영화")
+                            .foregroundColor(.white)
+                            .padding(.leading, 8)
+                        ScrollView(.horizontal) {
+                            LazyHStack {
+                                ForEach(0..<10) { _ in
+                                    Image("es")
+                                        .resizable()
+                                        .frame(width: 100, height: 180)
+                                }
+                                
+                            }
+                        }
+                        
+                        Text("애니메이션")
+                            .foregroundColor(.white)
+                            .padding(.leading, 8)
+                        ScrollView(.horizontal) {
+                            LazyHStack {
+                                ForEach(0..<10) { _ in
+                                    Image("es")
+                                        .resizable()
+                                        .frame(width: 100, height: 180)
+                                }
+                                
+                            }
+                        }
                     }
                 }
             }

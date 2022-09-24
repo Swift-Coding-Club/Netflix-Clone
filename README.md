@@ -14,6 +14,7 @@ SwiftUI와 내장 프레임워크(네트워크) 사용해서 Netflix 클론 해�
 
 #### 1주차
 * TMDB api 연동
+  * TMDB : https://www.themoviedb.org/documentation/api
 * 기본 세팅
 
 #### 2주차

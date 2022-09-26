@@ -23,6 +23,6 @@ private var apiKey: String {
   }
 }
 
-class Api {
+class WebService {
     static let host = "https://api.themoviedb.org/3/movie/"
 }

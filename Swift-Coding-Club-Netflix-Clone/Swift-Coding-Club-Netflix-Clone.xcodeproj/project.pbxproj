@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F02C3D6C28DEB88E003CA228 /* HomeHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C3D6B28DEB88E003CA228 /* HomeHorizontalView.swift */; };
 		F057DCB028C2524100C50935 /* Swift_Coding_Club_Netflix_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057DCAF28C2524100C50935 /* Swift_Coding_Club_Netflix_CloneApp.swift */; };
 		F057DCB228C2524100C50935 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057DCB128C2524100C50935 /* ContentView.swift */; };
 		F057DCB428C2524100C50935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F057DCB328C2524100C50935 /* Assets.xcassets */; };
 		F057DCB728C2524100C50935 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F057DCB628C2524100C50935 /* Preview Assets.xcassets */; };
-		F057DCC028C2645F00C50935 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057DCBF28C2645F00C50935 /* Api.swift */; };
+		F057DCC028C2645F00C50935 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057DCBF28C2645F00C50935 /* WebService.swift */; };
+		F0A6035028E1CFBE00957C82 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A6034F28E1CFBE00957C82 /* HomeHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F02C3D6B28DEB88E003CA228 /* HomeHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHorizontalView.swift; sourceTree = "<group>"; };
 		F057DCAC28C2524100C50935 /* Swift-Coding-Club-Netflix-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Coding-Club-Netflix-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F057DCAF28C2524100C50935 /* Swift_Coding_Club_Netflix_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Coding_Club_Netflix_CloneApp.swift; sourceTree = "<group>"; };
 		F057DCB128C2524100C50935 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F057DCB328C2524100C50935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F057DCB628C2524100C50935 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F057DCBE28C2644F00C50935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		F057DCBF28C2645F00C50935 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		F057DCBF28C2645F00C50935 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		F0A6034F28E1CFBE00957C82 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F02C3D6A28DEB883003CA228 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F0A6034F28E1CFBE00957C82 /* HomeHeaderView.swift */,
+				F02C3D6B28DEB88E003CA228 /* HomeHorizontalView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		F057DCA328C2524100C50935 = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +70,8 @@
 				F057DCBE28C2644F00C50935 /* Info.plist */,
 				F057DCBD28C25B0800C50935 /* WebServices */,
 				F057DCAF28C2524100C50935 /* Swift_Coding_Club_Netflix_CloneApp.swift */,
-				F057DCB128C2524100C50935 /* ContentView.swift */,
+				F0A6034D28E1CF8E00957C82 /* Main */,
+				F02C3D6A28DEB883003CA228 /* Home */,
 				F057DCB328C2524100C50935 /* Assets.xcassets */,
 				F057DCB528C2524100C50935 /* Preview Content */,
 			);
@@ -75,9 +89,17 @@
 		F057DCBD28C25B0800C50935 /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
-				F057DCBF28C2645F00C50935 /* Api.swift */,
+				F057DCBF28C2645F00C50935 /* WebService.swift */,
 			);
 			path = WebServices;
+			sourceTree = "<group>";
+		};
+		F0A6034D28E1CF8E00957C82 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F057DCB128C2524100C50935 /* ContentView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F057DCC028C2645F00C50935 /* Api.swift in Sources */,
+				F057DCC028C2645F00C50935 /* WebService.swift in Sources */,
+				F0A6035028E1CFBE00957C82 /* HomeHeaderView.swift in Sources */,
+				F02C3D6C28DEB88E003CA228 /* HomeHorizontalView.swift in Sources */,
 				F057DCB228C2524100C50935 /* ContentView.swift in Sources */,
 				F057DCB028C2524100C50935 /* Swift_Coding_Club_Netflix_CloneApp.swift in Sources */,
 			);

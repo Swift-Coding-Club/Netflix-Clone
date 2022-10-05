@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Movie.plist
+   Swift-Coding-Club-Netflix-Clone
+
+   Created by gaeng on 2022/09/26.
+   Copyright (c) 2022 ___ORGANIZATIONNAME___. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>tmdb api key</key>
+        <string>4334d8e0b308739f23df16fc9031a40f</string>
+    </dict>
+</plist>
